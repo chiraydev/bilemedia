@@ -1,0 +1,16 @@
+.normalTxt{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.smallTxt{
+    color: #8996b5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container{
+    background-color:#062263 ;
+    height: 100vh;
+}
