@@ -14,3 +14,19 @@
     background-color:#062263 ;
     height: 100vh;
 }
+
+.underline{
+    width: 15rem;
+    opacity: 1;
+    height: 3px;
+    margin-bottom: 0;
+    border: transparent;
+}
+
+.congo_txt{
+    color: rgb(77, 97, 143);
+    position: absolute;
+    left: 37%;
+    top: 62%;
+    font-weight: 900;
+}

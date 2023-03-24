@@ -43,14 +43,15 @@ function SimpleInput(props) {
       {isEditable ? (
         <input
         maxLength={maxLength}
+        id= {auth && "authInput"}
           style={{
             fontSize: "14px",
-            color: "black",
+            color: auth ? "white" : "black",
             height: "45px",
             borderRadius: "5px",
-            border: error ? 'red' : '1.5px solid #9F9F9F',
+            border: error ? 'red' : auth ? "transparent" : '1.5px solid #9F9F9F',
             padding:"10px",
-            backgroundColor:auth ? "#939FBB" :"white",
+            backgroundColor:auth ? "#263f77" :"white",
             ...inputStyle
           }}
           placeholder={placeholder}

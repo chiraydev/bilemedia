@@ -85,7 +85,9 @@ body {
   overflow-x: hidden;
 }
 
-
+.pointer{
+  cursor: pointer;
+}
 
 a {
   color: inherit;
@@ -93,3 +95,6 @@ a {
 }
 
 
+#authInput::placeholder{
+color:#7686a9 !important
+}

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
+import CloseBtn from "../../../public/assets/popup_cross_icon.png"
 
 function CommonModal({ show, setShow, title, primaryFunction, bodyContent,auth,centered = true }) {
   console.log(show, "showModal");
@@ -20,7 +22,12 @@ function CommonModal({ show, setShow, title, primaryFunction, bodyContent,auth,c
             </Modal.Title>
           </Modal.Header>
         )}
-        <Modal.Body  style={{backgroundColor:auth && "#062263"}} >{bodyContent}</Modal.Body>
+      
+      
+        <Modal.Body  style={{backgroundColor:auth && "#062263"}} >
+  {auth &&  <Image onClick={setShow}  src={CloseBtn} style={{position:"absolute",right:"20px",top:"10px",cursor:"pointer"}} />}
+          {bodyContent}
+          </Modal.Body>
         {primaryFunction && (
           <Modal.Footer>
             <Button variant="danger" onClick={setShow}>

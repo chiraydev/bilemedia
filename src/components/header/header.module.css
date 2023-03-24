@@ -3,7 +3,7 @@
 }
 
 .searchbar{
-    width: 40rem;
+    width: 45rem;
     border-radius: 6px;
     background: #1f3973;
     border: transparent;
@@ -14,7 +14,7 @@
 .searchIcon{
     position: absolute;
     /* left: 19px; */
-    z-index: 99999999;
+    z-index: 99;
     font-size: 25px;
     right: 15px;
     color: #418fc0;
