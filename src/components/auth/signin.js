@@ -15,7 +15,6 @@ function Login({setAuth}) {
   const [loginDetails, setLoginDetails] = useState({});
   const {userDetails,setUserDetails} = useGlobalStore(state => state )
 
-  console.log(userDetails,"userDetails");
 
   const {
     number = "",
